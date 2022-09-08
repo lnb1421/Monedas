@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1662522933 source:c:\users\leandro\documents\c\monedad\main.c
+	<stdio.h>
+	<stdlib.h>
+
