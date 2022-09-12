@@ -33,6 +33,76 @@ int main()
 
 
     return 0;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    #include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	
+	int Op, ingresoPeso, ingresoMoneda, total, acum;
+	int i=0;
+
+
+	do{
+	
+	Menu();
+	scanf("%d", &Op);
+    system("cls");
+    printf("Ingrese monto de pesos :");
+    scanf("%d", &ingresoPeso);
+   
+
+	
+	switch(Op){
+    	
+    	case 1:
+			printf("Ingrese monto en dolares a convertir :");
+    		  scanf("%d", &ingresoMoneda);
+			   total = ingresoPeso / ingresoMoneda;
+			    printf("total : %d\n\n", total);
+			  
+			  while(total>=100){
+    		  
+			      total=total-100;
+				
+    			     i++;
+    			}
+    	         printf("Cantidad de billetes : %d\n\n", i); 
+				  system("pause");
+				   system("cls"); 	   	 	
+	}
+    	}while(Op != 6);	
+	return 0;
+}
+
+void Menu(){
+	
+ printf("Elija la moneda a que desea convertir :\n\n");
+ printf("1-Dolar.\n");	
+ printf("2-Euro.\n");
+ printf("3-Real.\n");
+ printf("4-Libra.\n");
+ printf("5-Yen.\n");
+ printf("6-Salir\n");
+ 		
+}
+
 
 }
 
